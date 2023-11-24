@@ -2,7 +2,6 @@
 sidebar_position: 1
 title: Overview
 description: Learn how to get started with Conduktor Testing
-slug: /
 ---
 
 # Testing
@@ -23,7 +22,7 @@ Conduktor Testing provides:
 
 ## Get Started
 
-To get started, we thoroughly recommend that you complete our [**Getting Started**](/platform/testing/getting-started/install-the-testing-agent) guide. This will ensure your workspace is correctly configured and you can start executing tests!&#x20;
+To get started, we thoroughly recommend that you complete our [**Getting Started**](/getting-started/install-the-testing-agent) guide. This will ensure your workspace is correctly configured and you can start executing tests!
 
 - [Getting Started](/getting-started/install-the-testing-agent)
 - [Features](/features/workspace)

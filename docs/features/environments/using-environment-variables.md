@@ -28,7 +28,7 @@ For example, produce a JSON message value using the below example:
 }
 ```
 
-In the consumer task, you could create a check to validate if the `sessionId` in the record equals the value specified in an equal environment variable:&#x20;
+In the consumer task, you could create a check to validate if the `sessionId` in the record equals the value specified in an equal environment variable:
 
 _Note to resolve your variable correctly, you **must have an environment selected!**_
 
@@ -36,7 +36,7 @@ _Note to resolve your variable correctly, you **must have an environment selecte
 
 ## Template selection (Mustache)
 
-It's also possible to access environment variables if you are using the **Template (mustache)** input type.&#x20;
+It's also possible to access environment variables if you are using the **Template (mustache)** input type.
 
 In this case, you will be provided a helper modal when clicking the **'+'** button.
 

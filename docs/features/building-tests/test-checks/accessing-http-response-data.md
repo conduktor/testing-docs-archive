@@ -6,10 +6,10 @@ description: When you do Http calls, you may need to access the data for checks,
 
 # Accessing Http response data
 
-When you do Http calls, you may need to **access the data for checks**.&#x20;
+When you do Http calls, you may need to **access the data for checks**.
 
 :::info
-Looking for how to access or extract the **previous** task data ? Here is the [documentation](/platform/testing/features/building-tests/chaining-tasks#accessing-the-output)
+Looking for how to access or extract the **previous** task data ? Here is the [documentation](/features/building-tests/chaining-tasks#accessing-the-output)
 :::
 
 For example:
@@ -24,7 +24,9 @@ There are two methods of selecting data for a check:
 
 The below table indicates the different object identifiers that can be used to access attributes.
 
-_Note the information you are able to access depends on the task you are making the check on._
+:::note
+Note the information you are able to access depends on the task you are making the check on.
+:::
 
 ## Http Call
 
@@ -34,6 +36,5 @@ It's possible to make checks on the metadata collected when you produce to Kafka
 | --------- | --------------- | ----------------------------------- | ---------------------------- |
 | Body      | User-defined    | .httpResponse.body                  | context.httpResponse.body    |
 | Code      | User-defined    | .httpResponse.code                  | context.httpResponse.code    |
-| Headers   | {key, value}\[] | .httpResponse.headers               | context.httpResponse.headers |
+| Headers   | \{key, value\}\[] | .httpResponse.headers               | context.httpResponse.headers |
 
----

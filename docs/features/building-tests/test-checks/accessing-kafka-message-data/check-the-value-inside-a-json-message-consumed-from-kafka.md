@@ -6,7 +6,7 @@ description: Check the value inside a JSON message consumed from Kafka in Conduk
 
 # Check the value inside a JSON message consumed from Kafka
 
-First, add a [Producer](../../tasks/producer-task) task to your test scenario.&#x20;
+First, add a [Producer](../../tasks/producer-task) task to your test scenario.
 
 Navigate to the **Data** tab and select the **Value format** = **JSON**.
 
@@ -21,22 +21,24 @@ Click the **Scenario Start** button, and in parallel, add a **Consumer** task to
 Open the task in edit mode and:
 
 - Navigate to the data tab and set the **Value format** = **JSON**
-- Navigate to the **Checks** tab in the slide-out component&#x20;
+- Navigate to the **Checks** tab in the slide-out component
 
 With the input type **Field selection (JQ)** selected:
 
-- add `.record.value.id` as the field selection
-- Select `type` = `string` and `operator` =`equals`&#x20;
+- Add `.record.value.id` as the field selection
+- Select `type` = `string` and `operator` =`equals`
 - With `Plain value` selected as the input field, add `abc-123` as the value to compare
 
 ![](<../../../../assets/image (28).png>)
 
-Save your consumer task and **Run** your scenario. ** Navigate to the **Checks** tab to observe the result of the test check. **&#x20;
+Save your consumer task and **Run** your scenario. Navigate to the **Checks** tab to observe the result of the test check.
 
-_Note you must have the_ [_Testing Agent_](../../../../getting-started/install-the-testing-agent) _installed to run test scenarios._
+:::note
+Note you must have the [Testing Agent](../../../../getting-started/install-the-testing-agent) installed to run test scenarios.
+:::
 
 ![](<../../../../assets/image (104).png>)
 
-In this case our test was successful, as the expression validated true against the record that was consumed.&#x20;
+In this case our test was successful, as the expression validated true against the record that was consumed.
 
 Continue to read more about [Check Operators](../check-operators).

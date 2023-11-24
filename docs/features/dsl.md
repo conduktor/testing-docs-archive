@@ -6,9 +6,9 @@ description: Domain-specific language
 
 # DSL
 
-The DSL (Domain-specific language) is a specialized language enabling **rapid test declaration** and **version control** of your [Test Scenarios](building-tests/test-scenarios).&#x20;
+The DSL (Domain-specific language) is a specialized language enabling **rapid test declaration** and **version control** of your [Test Scenarios](building-tests/test-scenarios).
 
-When you use the Testing UI, it's possible to toggle between the visual and code-wise representation of a test.&#x20;
+When you use the Testing UI, it's possible to toggle between the visual and code-wise representation of a test.
 
 Additionally, it's possible to **export** the DSL behind a test scenario, and version control it in a system like Github. You can also **import** the DSL from a file, and create a test scenario from it.
 
@@ -89,7 +89,7 @@ scenario:
 
 ## Toggling the DSL view
 
-When using Conduktor Testing, you can switch between the visual representation and the DSL in multiple ways.&#x20;
+When using Conduktor Testing, you can switch between the visual representation and the DSL in multiple ways.
 
 You can switch at a:
 
@@ -98,7 +98,7 @@ You can switch at a:
 
 ### **Task Level DSL**
 
-When in **edit** mode for a [Task](building-tests/tasks), use the **DSL View** button to switch to the code-wise representation of your task.&#x20;
+When in **edit** mode for a [Task](building-tests/tasks), use the **DSL View** button to switch to the code-wise representation of your task.
 
 ![](<../assets/image (32).png>)
 
@@ -112,7 +112,7 @@ To see your entire test scenario represented via the DSL, access the **DSL tab**
 
 ![](<../assets/image (110).png>)
 
-You can **edit** the scenario DSL in this view, and also **export** it if you wish to store it elsewhere.&#x20;
+You can **edit** the scenario DSL in this view, and also **export** it if you wish to store it elsewhere.
 
 ## Restore a DSL version
 
@@ -120,18 +120,20 @@ If you have made changes to your test scenario, but want to rollback to a previo
 
 When in the DSL view for a test scenario, select the previous version from the **version history.**
 
-_Note you will see a diff comparing the current version against your previously selected version._
+:::note
+You will see a diff comparing the current version against your previously selected version.
+:::
 
 ![](<../assets/image (83).png>)
 
-To rollback to a previous version, select **Restore version** from the diff comparison view.&#x20;
+To rollback to a previous version, select **Restore version** from the diff comparison view.
 
 ## Import DSL as a new test scenario
 
 If you prefer to declare tests utilising the DSL, you may want to import a scenario so that:
 
 - It's visually represented inside the UI
-- You can export the [CI configuration](ci-cd-automation) for automation&#x20;
+- You can export the [CI configuration](ci-cd-automation) for automation
 
 From within a [Test Suite](building-tests/test-suites), select the **Import from DSL** option.
 

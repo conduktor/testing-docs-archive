@@ -6,9 +6,9 @@ description: Produce data to a Kafka topic.
 
 # Producer Task
 
-Use the **Producer** task to produce data to a Kafka topic.&#x20;
+Use the **Producer** task to produce data to a Kafka topic.
 
-You can produce data to Kafka in multiple ways.&#x20;
+You can produce data to Kafka in multiple ways.
 
 | Method             | Description                                                                      |
 | ------------------ | -------------------------------------------------------------------------------- |
@@ -19,7 +19,7 @@ You can produce data to Kafka in multiple ways.&#x20;
 
 ## Serialization support
 
-When you produce data to Kafka you must specify the serialization format for the record keys and values.&#x20;
+When you produce data to Kafka you must specify the serialization format for the record keys and values.
 
 Currently supported SerDes formats:
 
@@ -29,19 +29,19 @@ Currently supported SerDes formats:
 - Float
 - Double
 - Bytes (base64)
-- Avro (Custom)&#x20;
+- Avro (Custom)
 - Avro (Schema Registry)
 - Protobuf (Schema Registry)
 - JSON (Schema Registry)
 - MessagePack
 
-## Create a simple producer task&#x20;
+## Create a simple producer task
 
 When inside the editor for a new scenario, select the **Scenario Start** button and select **Producer** from the dropdown menu.
 
 ![](<../../../assets/image (53).png>)
 
-Give your task an appropriate **name**, and select the **Cluster** and **Topic** that you want to produce data to. If you do not have a Cluster configured, [add one ](../../../getting-started/connect-to-a-kafka-cluster)first.&#x20;
+Give your task an appropriate **name**, and select the **Cluster** and **Topic** that you want to produce data to. If you do not have a Cluster configured, [add one ](../../../getting-started/connect-to-a-kafka-cluster)first.
 
 :::tip
 **Pro Tip!** After selecting a Cluster and Topic, use **Topic Preview** to fetch the latest records from your topic
@@ -51,13 +51,13 @@ Give your task an appropriate **name**, and select the **Cluster** and **Topic**
 
 Navigate to the **Data** tab to define the data you wish to produce to your Kafka topic.
 
-Select the `Key format` and enter a key value (or leave it null).&#x20;
+Select the `Key format` and enter a key value (or leave it null).
 
 Select the `Value format` (for example, **JSON**) and enter your message value.
 
 ![](<../../../assets/image (134).png>)
 
-Select **Save** once you have configured your message.&#x20;
+Select **Save** once you have configured your message.
 
 Your task will now be visible on the scenario canvas.
 
@@ -65,7 +65,7 @@ Your task will now be visible on the scenario canvas.
 
 ## **Adding headers as metadata**
 
-When producing data to Kafka, you can add headers to your message.&#x20;
+When producing data to Kafka, you can add headers to your message.
 
 This can be useful if data is constantly being produced into your topic, and you want to identify messages produced via Conduktor Testing specifically.
 
@@ -77,7 +77,7 @@ Read more about how to use **header filters** in [Consumer](consumer-task) Tasks
 
 ## Create an advanced producer task
 
-There are additional, advanced options for producing data with special conditions.&#x20;
+There are additional, advanced options for producing data with special conditions.
 
 In this example, we will demonstrate how to produce a **stream** of **randomly generated messages**.
 
@@ -98,14 +98,14 @@ Next, scroll down and toggle the **Stream messages** button to activate streamin
 - Under **Stop Conditions**, enter the value **10**
 
 :::info
-Under these conditions, our task will produce a record to Kafka **every second until 10 records** have been produced.&#x20;
+Under these conditions, our task will produce a record to Kafka **every second until 10 records** have been produced.
 :::
 
 ![](<../../../assets/image (155).png>)
 
 ## Additional producer options
 
-There are additional, advanced options available under the **Options** heading.&#x20;
+There are additional, advanced options available under the **Options** heading.
 
 | Option          | Description                                                                                                                    |
 | --------------- | ------------------------------------------------------------------------------------------------------------------------------ |

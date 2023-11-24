@@ -30,7 +30,7 @@ Provide a **Name** to identify your agent, and confirm whether it will be person
 - **CI Agent:** You will use this token for executing tests in CI/CD jobs. Note this is only relevant when you have already created meaningful tests, and want to automate their execution.
   - _[Learn more](../features/ci-cd-automation) about using the CI Agent_
 
-Select **Create** to generate the commands for **downloading** and **running** your Agent.&#x20;
+Select **Create** to generate the commands for **downloading** and **running** your Agent.
 
 ## Run the Testing Agent
 
@@ -56,7 +56,7 @@ You will only be shown the token **once**, so it's recommended you **Download** 
 
 ### Validate the Connection
 
-After executing the commands, you should see `Agent connected!` in the logs.&#x20;
+After executing the commands, you should see `Agent connected!` in the logs.
 
 :::info
 If you observe an error regarding the Java Runtime (class file version 55.0), please [download](https://www.oracle.com/java/technologies/downloads) a more recent version of Java. The Agent supports **Java 11+**.
@@ -64,13 +64,13 @@ If you observe an error regarding the Java Runtime (class file version 55.0), pl
 
 Assuming setup was successful, you will see the green `Connection is successful!` message within the Conduktor Testing UI.
 
-Ensure that your newly created Agent is selected in the left-hand navigation menu.&#x20;
+Ensure that your newly created Agent is selected in the left-hand navigation menu.
 
 ![](<../assets/image (11) (1).png>)
 
 Now you have the Testing Agent installed, you will be able to reach clusters that your host has access to within the Testing application. Continue to [connecting a Kafka cluster](connect-to-a-kafka-cluster).
 
-## Binary Installation&#x20;
+## Binary Installation
 
 **Java 11+** is required for running the Testing Agent. If you do not meet these requirements, please [download](https://www.oracle.com/java/technologies/downloads) a more recent Java version.
 
@@ -110,7 +110,7 @@ services:
       TOKEN: <TOKEN>
 ```
 
-## Running in your CI/CD Environment&#x20;
+## Running in your CI/CD Environment
 
 The Testing Agent is a long-running process, and should not be used in a CI pipeline.
 

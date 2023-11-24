@@ -16,17 +16,17 @@ This tutorial assumes you have setup the [Testing Agent](install-the-testing-age
 
 ## Create a Test Suite
 
-From within your [Workspace](../features/workspace), navigate to the **Test Suites** tab and select **Create New.**
+From within your [Workspace](../features/workspace), navigate to the **Test Suites** tab and select **Create New**.
 
-Give your test suite a name, for example, 'My First Test Suite'.
+Give your test suite a name, for example, `My First Test Suite`.
 
 ![testing-scenario-1.png](/img/testing/hello-world/testing-scenario-1.png)
 
 ## Create a Test Scenario
 
-From within your newly created test suite, select **Create New** to create a **Test Scenario.**
+From within your newly created test suite, select **Create New** to create a **Test Scenario**.
 
-Give your test scenario a name, for example, 'Hello World'.
+Give your test scenario a name, for example, `Hello World`.
 
 ![testing-hello-world.png](/img/testing/hello-world/testing-hello-world.png)
 
@@ -63,11 +63,13 @@ Select the **Scenario Start** button and select **Consumer** from the dropdown m
 
 ![testing-consume.png](/img/testing/hello-world/testing-consume.png)
 
-Navigate to the **Data** tab and select the **deserialization** format for your message key/value.&#x20;
+Navigate to the **Data** tab and select the **deserialization** format for your message key/value.
 
 In this case, select **String** for both message key and value.
 
-_Note we will use the default Lifecycle conditions in this example. These assume that we will only consume 1 record._
+:::note
+Note we will use the default Lifecycle conditions in this example. These assume that we will only consume 1 record.
+:::
 
 ![testing-consume-data.png](/img/testing/hello-world/testing-consume-data.png)
 
@@ -89,9 +91,11 @@ Select **Save** to add the Consume task to the editor.
 
 ## Execute your Test Scenario
 
-Select the **Run** button to execute your test and observe the result.&#x20;
+Select the **Run** button to execute your test and observe the result.
 
-_Note you must have a connected agent selected via the left navigation menu._
+:::note
+Note you must have a connected agent selected via the left navigation menu.
+:::
 
 Navigate to the **Checks** tab to see the result of any [Test Checks](../features/building-tests/test-checks).
 

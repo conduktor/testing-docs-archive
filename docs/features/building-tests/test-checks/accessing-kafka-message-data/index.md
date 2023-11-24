@@ -5,10 +5,10 @@ description: Access data from your message key, value or the associated metadata
 
 # Accessing Kafka message data
 
-When you produce or consume records from Kafka you may need to **access the data for checks**.&#x20;
+When you produce or consume records from Kafka you may need to **access the data for checks**.
 
 :::info
-Looking for how to access the **previous** task data ? Here is the [documentation ](/platform/testing/features/building-tests/chaining-tasks#accessing-the-output)
+Looking for how to access the **previous** task data ? Here is the [documentation](/features/building-tests/chaining-tasks#accessing-the-output).
 :::
 
 For example:
@@ -23,7 +23,9 @@ There are two methods of selecting data for a check:
 
 The below table indicates the different object identifiers that can be used to access attributes.
 
-_Note the information you are able to access depends on the task you are making the check on._
+:::note
+Note the information you are able to access depends on the task you are making the check on.
+:::
 
 ## Producer Checks
 
@@ -39,12 +41,12 @@ It's possible to make checks on the metadata collected when you produce to Kafka
 | Topic     | String       | .record.topic                       | context.record.topic      |
 
 :::info
-See an [example](./#example-check-the-value-of-an-attribute-inside-a-json-message-value) of how to check the partition of a record produced to Kafka
+See an [example](/features/building-tests/test-checks/accessing-kafka-message-data/check-the-partition-of-a-message-produced-to-kafka) of how to check the partition of a record produced to Kafka
 :::
 
 ## Consumer
 
-Make checks on the key & value for any consumed record(s) and associated metadata.&#x20;
+Make checks on the key & value for any consumed record(s) and associated metadata.
 
 | Attribute       | Type         | How to access: Field selection (JQ) | How to access: JavaScript    |
 | --------------- | ------------ | ----------------------------------- | ---------------------------- |
@@ -58,7 +60,5 @@ Make checks on the key & value for any consumed record(s) and associated metadat
 | Value Schema Id | Number       | .record.valueSchemaId               | context.record.valueSchemaId |
 
 :::info
-See an [example](/platform/testing/features/building-tests/test-checks/accessing-kafka-message-data/check-the-value-inside-a-json-message-consumed-from-kafka) of how to check an attribute inside a JSON message value
+See an [example](/features/building-tests/test-checks/accessing-kafka-message-data/check-the-value-inside-a-json-message-consumed-from-kafka) of how to check an attribute inside a JSON message value
 :::
-
----

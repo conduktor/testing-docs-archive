@@ -6,7 +6,7 @@ description: Use the HTTP task to test APIs that form part of your system archit
 
 # HTTP Task
 
-Use the **HTTP** task to test APIs that form part of your system architecture.&#x20;
+Use the **HTTP** task to test APIs that form part of your system architecture.
 
 This involves defining an API endpoint, the method, any relevant body data, headers, query parameters, or authentication required for your API.
 
@@ -23,13 +23,13 @@ When making a request, you can make **checks** on the response data. Below outli
 
 ## Creating an HTTP Task
 
-When inside the editor for a new scenario, select the **Scenario Start** button and select **HTTP Request.**&#x20;
+When inside the editor for a new scenario, select the **Scenario Start** button and select **HTTP Request.**
 
 ![](<../../../assets/image (168).png>)
 
 ### Method & URL
 
-Give the task an appropriate name, then add the URL and method for your HTTP request.&#x20;
+Give the task an appropriate name, then add the URL and method for your HTTP request.
 
 Supported methods:
 
@@ -66,7 +66,7 @@ This allows you to input a list of key/value pairs to be appended to your reques
 
 ### Query Parameters
 
-Expand the query parameters section to add query parameters to your request.&#x20;
+Expand the query parameters section to add query parameters to your request.
 
 :::info
 You have flexibility to add query parameters automatically in the URL, or use the dedicated module to add them in a structured way.
@@ -99,26 +99,26 @@ If your API utilizes a custom authentication header, you can use this option to 
 
 ## Previewing Requests
 
-Before saving your HTTP task, use the `Preview` button to see if your request is constructed correctly.&#x20;
+Before saving your HTTP task, use the `Preview` button to see if your request is constructed correctly.
 
 ![](<../../../assets/image (29).png>)
 
-It also gives you a chance to preview the response data, which is useful when adding checks.&#x20;
+It also gives you a chance to preview the response data, which is useful when adding checks.
 
 It will demonstrate the structure of any response data, and give an indication on the status code, response time, and response size.
 
 ![](<../../../assets/image (39).png>)
 
-## Combining HTTP & Kafka&#x20;
+## Combining HTTP & Kafka
 
-It's not uncommon to use a RESTful interface to interact with an Apache Kafka cluster.&#x20;
+It's not uncommon to use a RESTful interface to interact with an Apache Kafka cluster.
 
 In Conduktor Testing, It's possible to chain together HTTP and Kafka tasks. This enables you to cover end-to-end scenarios that involve both protocols.
 
 Common scenarios might include:
 
 - Sending messages to a REST proxy that propagates it into a Kafka topic
-- Validating a record via an API after it has been processed in Kafka&#x20;
+- Validating a record via an API after it has been processed in Kafka
 
 ### Example: REST Proxy & Kafka Consumer
 
@@ -161,7 +161,7 @@ On the **Checks** tab, add a validation on the response code.
 
 Run your scenario, and observe the execution events.
 
-Preview the **HTTP request completed** event to see a summary of the event.&#x20;
+Preview the **HTTP request completed** event to see a summary of the event.
 
 ![](<../../../assets/image (11).png>)
 

@@ -5,7 +5,7 @@ description: Learn how to apply different types of validation on your Kafka data
 
 # Test Checks
 
-To ensure your applications that integrate Apache Kafka are working correctly, you can apply checks to **validate functionality** and **test your Kafka data**.&#x20;
+To ensure your applications that integrate Apache Kafka are working correctly, you can apply checks to **validate functionality** and **test your Kafka data**.
 
 You might also run tests to validate how your application handles a specific scenario. For example, to understand how your application responds to an erroneous or missing message value.
 
@@ -17,7 +17,7 @@ To add a check to a task, open it in edit mode and navigate to the **Checks** ta
 
 ![](<../../../assets/image (100).png>)
 
-When you create a check, you need to **reference an attribute** **to test in your expression**.&#x20;
+When you create a check, you need to **reference an attribute** **to test in your expression**.
 
 That attribute could be a:
 
@@ -25,6 +25,6 @@ That attribute could be a:
 - Message value
 - Some metadata associated with the record (e.g. partition, offset)
 
-To see how to access these attributes, please continue to [**Accessing Kafka message data**](/platform/testing/features/building-tests/test-checks/accessing-kafka-message-data).&#x20;
+To see how to access these attributes, please continue to [**Accessing Kafka message data**](/features/building-tests/test-checks/accessing-kafka-message-data).
 
-&#x20;
+

@@ -19,7 +19,7 @@ You can consume data from Kafka with a number of conditions.
 
 ## Deserialization support
 
-When you consume data from Kafka you must specify the deserialization format for the record keys and values.&#x20;
+When you consume data from Kafka you must specify the deserialization format for the record keys and values.
 
 Currently supported SerDes formats:
 
@@ -29,7 +29,7 @@ Currently supported SerDes formats:
 - Float
 - Double
 - Bytes (base64)
-- Avro (Custom)&#x20;
+- Avro (Custom)
 - Avro (Schema Registry)
 - Protobuf (Schema Registry)
 - JSON (Schema Registry)
@@ -37,12 +37,12 @@ Currently supported SerDes formats:
 
 ## Create a consumer task
 
-For this exercise, we will assume you have already added a [simple Produce task](producer-task#create-a-simple-produce-task) to your test scenario. We will consume the message configured in the Producer task.&#x20;
+For this exercise, we will assume you have already added a [simple Produce task](producer-task#create-a-simple-produce-task) to your test scenario. We will consume the message configured in the Producer task.
 
 :::info
 **Note: When producing and consuming from the same topic**
 
-To ensure the consumer task is subscribed when the message is produced, these tasks must be configured in **parallel**.&#x20;
+To ensure the consumer task is subscribed when the message is produced, these tasks must be configured in **parallel**.
 :::
 
 From inside the editor view, select the **Scenario Start** button and select **Consumer** from the dropdown menu.
@@ -57,13 +57,13 @@ Navigate to the **Data** tab and define the deserialization format for the **Key
 
 ![](<../../../assets/image (82).png>)
 
-The Consumer task is configured with **default lifecycle rules**. It will stop when **1 record** has been consumed, or **fail after 60,000ms**.&#x20;
+The Consumer task is configured with **default lifecycle rules**. It will stop when **1 record** has been consumed, or **fail after 60,000ms**.
 
 However, you can amend these to suit your needs within the **Lifecycle** section.
 
 ![](<../../../assets/image (97).png>)
 
-To learn about adding checks (tests) on data consumed from Kafka, move on to [\*\*Test Checks\*\*](../test-checks).&#x20;
+To learn about adding checks (tests) on data consumed from Kafka, move on to [Test Checks](../test-checks).
 
 ## Consumer filters
 

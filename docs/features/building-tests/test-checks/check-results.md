@@ -6,17 +6,17 @@ description: Investigate the reasons for a test failure.
 
 # Check Results
 
-When you execute a test scenario containing checks, the result will be either pass or fail. In the case of a failure, you may want to investigate the reasons why.&#x20;
+When you execute a test scenario containing checks, the result will be either pass or fail. In the case of a failure, you may want to investigate the reasons why.
 
 Execute a test scenario, or navigate to a historical run, and select the **Checks** tab.
 
-Click into a failed check to see the **actual result** against the **expected result**.&#x20;
+Click into a failed check to see the **actual result** against the **expected result**.
 
 :::info
 **Tip!** Revisit a historical test run via the **Executions** module within the **Insights** tab.
 :::
 
-In the below example, the [Test Check](.) has **failed** because the expected value does not match the actual value.&#x20;
+In the below example, the [Test Check](.) has **failed** because the expected value does not match the actual value.
 
 _Any test checks that fail will cause the Test Scenario to be considered a fail._
 

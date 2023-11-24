@@ -19,14 +19,16 @@ Select the **+ button** to create a new check
 With the [custom input](../../../custom-inputs) type **Field selection (JQ)** selected:
 
 - add `.record.partition` as the field selection
-- Select `type` = `any` and `operator` =`equals`&#x20;
-- With `Plain value` selected as the input field for the value, add the expected partition&#x20;
+- Select `type` = `any` and `operator` =`equals`
+- With `Plain value` selected as the input field for the value, add the expected partition
 
 ![](<../../../../assets/image (135).png>)
 
 **Run** your test, and navigate to the **Checks** tab when the execution is complete to observe the result of your check.
 
-_Note to run tests you must have the_ [_Testing Agent_](../../../../getting-started/install-the-testing-agent) _installed_.&#x20;
+:::note
+Note to run tests you must have the [Testing Agent](../../../../getting-started/install-the-testing-agent) installed.
+:::
 
 ![](<../../../../assets/image (111).png>)
 

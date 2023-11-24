@@ -17,7 +17,7 @@ If you choose to use the visual editor, you can later **export** the DSL. Equall
 
 ## Create a Test Scenario
 
-From within a [Test Suite](test-suites), select **New Scenario** to add a new scenario. You will be prompted to provide a name to identify your test scenario.&#x20;
+From within a [Test Suite](test-suites), select **New Scenario** to add a new scenario. You will be prompted to provide a name to identify your test scenario.
 
 ![](<../../assets/image (85).png>)
 

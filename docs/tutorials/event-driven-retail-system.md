@@ -8,9 +8,9 @@ description: Learn how to test the end-to-end flow of an event-driven architectu
 In this tutorial, we will demonstrate how to compose an end-to-end Test Scenario for an event-driven system composing of multiple topics. This tutorial will demonstrate:
 
 - Testing the **workflow** to validate the integrations
-  - _Are messages correctly broadcast to Kafka topics from the external applications?_&#x20;
+  - _Are messages correctly broadcast to Kafka topics from the external applications?_
 - Testing the **data integrity** at each step:
-  - _Was our message enriched correctly based on the_ `userId`
+  - _Was our message enriched correctly based on the `userId`?_
   - _Was a message received within an agreed SLA?_
 
 ## Architecture Reference
@@ -33,20 +33,20 @@ Remember, any dependent applications must be running to validate the scenario. I
 
 ![](<../assets/image (10) (1) (1).png>)
 
-Note that:
-
+:::note
 - The first task produces a message into `pageviews` topic
 - Once it's been processed by the User Service, the second task consumes the enriched event from `enriched_pageviews`
-  - _Note that it's chained onto the `end` _ [_port_](../features/building-tests/tasks/task-ports) _of the previous task_
+  - _Note that it's chained onto the `end` [port](../features/building-tests/tasks/task-ports) of the previous task_
 - Lastly, the third task will consume any resultant events from `upsell_events`
+:::
 
 ## Breaking it Down
 
 ### Producer Task
 
-This task produces a message into the `pageviews` topic. There are no [Test Checks](../features/building-tests/test-checks) associated with it.&#x20;
+This task produces a message into the `pageviews` topic. There are no [Test Checks](../features/building-tests/test-checks) associated with it.
 
-The cluster and topic are configured on the **General** tab. Then, a valid JSON message value is set on the **Data** tab.&#x20;
+The cluster and topic are configured on the **General** tab. Then, a valid JSON message value is set on the **Data** tab.
 
 The User Service will take care of enrichment based on the `userId` present in this message.
 
@@ -61,12 +61,12 @@ In the **Data** tab, the deserialisation formats for consuming the enriched mess
 Only 1 enriched message is expected from the User Service, therefore the default lifecycle rules _(stop after 1 message is consumed)_ are suitable.
 
 :::info
-If messages were continuously being produced into this topic, we would need to use a filter to intercept the correct one.&#x20;
+If messages were continuously being produced into this topic, we would need to use a filter to intercept the correct one.
 :::
 
 ![](<../assets/Screenshot 2022-05-24 at 20.54.29.png>)
 
-Below shows the expected output for an **enriched** message.&#x20;
+Below shows the expected output for an **enriched** message.
 
 ```json
 // Consumed Message
@@ -93,9 +93,9 @@ To validate the User Service is working correctly, we will create a [Test Check]
 
 ### Consumer Task - Check Upsell
 
-The last task is used to ensure that `Free` members who visit the checkout page are upsold promotional products.&#x20;
+The last task is used to ensure that `Free` members who visit the checkout page are upsold promotional products.
 
-If the Promotions Service is working correctly, a message will be produced into the `upsell_events` topic.&#x20;
+If the Promotions Service is working correctly, a message will be produced into the `upsell_events` topic.
 
 From a business perspective, it's important this happens within an agreed **SLA.** For this example, the SLA is set at 500ms.
 
@@ -114,16 +114,16 @@ Use **Run** to execute the test and observe the result.
 
 ![](<../assets/Screenshot 2022-05-25 at 17.35.20.png>)
 
-In the above case, we can see the end-to-end test scenario has **failed**. Hovering over the events will provide more detail.&#x20;
+In the above case, we can see the end-to-end test scenario has **failed**. Hovering over the events will provide more detail.
 
 > `Consumer reached the Timeout fail condition`
 >
 > This means that the business SLA of 500ms was not met.
 
-Navigating to the **Checks** tab will detail the result of any [Test Checks](../features/building-tests/test-checks). In this case, the check on the enriched data was successful.&#x20;
+Navigating to the **Checks** tab will detail the result of any [Test Checks](../features/building-tests/test-checks). In this case, the check on the enriched data was successful.
 
 > userId `12345` was correctly attributed to a `Free` plan by the User Service
 
 ![](<../assets/Screenshot 2022-05-25 at 17.50.50.png>)
 
-**Great!** We have our identified the components in our system that are passing, and those that are currently failing. Now we can start to address the reasons for failure!&#x20;
+**Great!** We have our identified the components in our system that are passing, and those that are currently failing. Now we can start to address the reasons for failure!

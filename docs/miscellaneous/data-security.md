@@ -1,7 +1,7 @@
 ---
 sidebar_position: 2
 title: Data Security
-description: Modify your data security and privacy settings when using Conduktor testing.
+description: Modify your data security and privacy settings when using Conduktor Testing.
 ---
 
 # Data Security
@@ -10,7 +10,7 @@ description: Modify your data security and privacy settings when using Conduktor
 
 When you use Conduktor Testing, some information is shared with our platform. You can find more information about data that may be collected when you use our products via the [privacy policy](https://www.conduktor.io/privacy-policy).
 
-For Conduktor Testing to provide most value, we store some data relating to your test executions. This enables you to inspect data associated with a historical test execution.&#x20;
+For Conduktor Testing to provide most value, we store some data relating to your test executions. This enables you to inspect data associated with a historical test execution.
 
 Information we store:
 
@@ -30,7 +30,7 @@ To opt-out of record and check data being stored when you execute a test, use th
 Options:
 
 - **Redact record data:** Any record data that can be later previewed when visiting a test execution will be redacted.
-- **Redact check data:** Any data associated with a test check will be redacted when visiting a historical execution.&#x20;
+- **Redact check data:** Any data associated with a test check will be redacted when visiting a historical execution.
 
 ![](<../assets/image (96).png>)
 
@@ -45,7 +45,7 @@ _When previewing the consumed record, you will not be able to see **message key/
 To opt-out of record and check data being stored when you execute a test suite, you have the same configurable options.
 
 - **Redact record data:** Any record data that can be later previewed when visiting a test execution will be redacted.
-- **Redact check data:** Any data associated with a test check will be redacted when visiting a historical execution.&#x20;
+- **Redact check data:** Any data associated with a test check will be redacted when visiting a historical execution.
 
 ![ ](<../assets/image (101).png>)
 
@@ -55,12 +55,4 @@ We capture analytics and error events so that we can improve our platform for us
 
 - **Segment**: Used to capture user behavioural data that is anonymized. This allows us to understand if users are having issues navigating the application, or finding new features.
 - **Sentry:** Only in case of errors, we send the error events to Sentry that provide us visibility of an issue.
-- **Datadog:** Anonymized RUM metrics that provide insight into the experience of users for performance, error management, analytics, and support.&#x20;
-
-## Support
-
-If you have any questions, or need any further clarifications, please use the support widget inside Conduktor Testing.
-
-The widget can be found in the bottom-right corner of all screens.
-
-![](<../assets/image (103).png>)
+- **Datadog:** Anonymized RUM metrics that provide insight into the experience of users for performance, error management, analytics, and support.

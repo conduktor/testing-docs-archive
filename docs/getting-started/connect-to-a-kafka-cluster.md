@@ -6,7 +6,7 @@ description: You must add a Kafka cluster to your workspace to build tests.
 
 # Connect to a Kafka Cluster
 
-You must add a Kafka cluster in your [Workspace](../features/workspace). This enables you to reference the cluster when building [Test Scenarios](../features/building-tests/test-scenarios).
+You must add a Kafka cluster in your [Workspace](/features/workspace). This enables you to reference the cluster when building [Test Scenarios](/features/building-tests/test-scenarios).
 
 The ability to reach your cluster will depend on where you have setup the [Testing Agent](install-the-testing-agent).
 
@@ -16,11 +16,11 @@ If you started Conduktor via **Docker**, you should have already configured your
 
 ## Adding a cluster
 
-To add a Kafka cluster, navigate to the **Clusters** tab from within your [Workspace](../features/workspace).&#x20;
+To add a Kafka cluster, navigate to the **Clusters** tab from within your [Workspace](/features/workspace).
 
 ![](<../assets/image (14).png>)
 
-Select **Create New** and you will be presented with the cluster configuration modal.&#x20;
+Select **Create New** and you will be presented with the cluster configuration modal.
 
 ![](<../assets/image (173).png>)
 
@@ -38,7 +38,7 @@ When you have configured the cluster properties, click **refresh** to check the 
 
 ## Schema Registry
 
-When you configure a cluster, you also have the option to configure Schema Registry. Conduktor supports the Avro, JSON and Protobuf formats.&#x20;
+When you configure a cluster, you also have the option to configure Schema Registry. Conduktor supports the Avro, JSON and Protobuf formats.
 
 Select the **Schema registry** tab from within the cluster configuration modal to get started.
 
@@ -50,7 +50,7 @@ Select the **Schema registry** tab from within the cluster configuration modal t
 
 ## Connect to a Local Kafka cluster
 
-You are able to connect to a Kafka cluster that is running on your localhost. For example, a cluster that has been started via [Docker](https://github.com/conduktor/kafka-stack-docker-compose), or via the Kafka binaries.&#x20;
+You are able to connect to a Kafka cluster that is running on your localhost. For example, a cluster that has been started via [Docker](https://github.com/conduktor/kafka-stack-docker-compose), or via the Kafka binaries.
 
 **The only pre-requisite** is that the [Testing Agent](install-the-testing-agent) is running on a host that has access to your cluster.
 
@@ -109,19 +109,18 @@ From within the cluster configuration modal of the Testing application, **Paste*
 
 ![](<../assets/image (24).png>)
 
-Click **Create Cluster** to save your cluster.&#x20;
+Click **Create Cluster** to save your cluster.
 
 ## Connect to a Aiven cluster
 
 To connect to an Aiven cluster, you must specify the **Access Key**, **Access Certificate**, and **CA Certificate**.
 
-To obtain these files, go to:
+To obtain these files, go to: [https://console.aiven.io/project/](https://console.aiven.io/project)\<project\>/services/\<cluster\>
 
-[https://console.aiven.io/project/](https://console.aiven.io/project)\&#60;project&#62;/services/\&#60;cluster&#62; \
-\
-From within the cluster configuration modal, add the Bootstrap server. This is labelled **Service URI** within the Aiven console.&#x20;
 
-Using the **additional properties,** reference the **absolute path** of the files downloaded from the Aiven console.&#x20;
+From within the cluster configuration modal, add the Bootstrap server. This is labelled **Service URI** within the Aiven console.
+
+Using the **additional properties,** reference the **absolute path** of the files downloaded from the Aiven console.
 
 For example:
 
@@ -134,7 +133,7 @@ It's important that the [Testing Agent](install-the-testing-agent) is running on
 ![](<../assets/image (138).png>)
 
 :::tip
-**Pro Tip!** If you are using the Conduktor Desktop GUI, you can use the **Aiven wizard** to setup your cluster configuration and paste the config into Testing.&#x20;
+**Pro Tip!** If you are using the Conduktor Desktop GUI, you can use the **Aiven wizard** to setup your cluster configuration and paste the config into Testing.
 :::
 
 ## Connect to a Red Hat cluster
@@ -167,13 +166,13 @@ security.protocol=SASL_SSL
 
 ## Connect to a MSK cluster
 
-For connecting to MSK, we recommend installing the [Testing Agent](install-the-testing-agent) on an EC2 instance with access to the cluster.&#x20;
+For connecting to MSK, we recommend installing the [Testing Agent](install-the-testing-agent) on an EC2 instance with access to the cluster.
 
 :::info
-Note that you will need to configure **Security Groups** so that the cluster's security group can accept traffic coming from the EC2 instance's security group. See [docs](https://docs.aws.amazon.com/msk/latest/developerguide/create-client-machine.html).&#x20;
+Note that you will need to configure **Security Groups** so that the cluster's security group can accept traffic coming from the EC2 instance's security group. See [docs](https://docs.aws.amazon.com/msk/latest/developerguide/create-client-machine.html).
 :::
 
-When you create an Agent inside the Testing UI, you will be provided the commands for downloading and running it.&#x20;
+When you create an Agent inside the Testing UI, you will be provided the commands for downloading and running it.
 
 Execute these commands on your EC2 instance, and you should see the message:
 
@@ -187,7 +186,7 @@ From within the Testing UI, you should now be able to see that the Agent is conn
 
 Navigate to the Clusters tab, and **Create** a new cluster.
 
-- Add the bootstrap servers&#x20;
+- Add the bootstrap servers
   - For MSK, you can find this by selecting the Cluster within AWS > MSK and clicking **View client information**
 - Add any required configuration properties
 

@@ -6,9 +6,9 @@ description: The Set Variable task enables you to assign values to a local varia
 
 # Set Variable Task
 
-The Set Variable task enables you to assign values to a local variable for use in your [Test Scenario](../test-scenarios).&#x20;
+The Set Variable task enables you to assign values to a local variable for use in your [Test Scenario](../test-scenarios).
 
-You can define a value explicitly, or reference data from a chained task using the [Task Ports](task-ports).&#x20;
+You can define a value explicitly, or reference data from a chained task using the [Task Ports](task-ports).
 
 :::info
 Unlike [environment](../../environments) variables, which can be used globally across any scenario, local variables are only available within the context of the scenario they are set.
@@ -23,7 +23,7 @@ When inside the visual editor for a new scenario, select the **Scenario Start** 
 Enter the variable value in the **Value** input, and add your variable name in the **Assign to** input.
 
 :::info
-Note you can switch between the different [Custom Inputs](/platform/testing/features/custom-inputs) for assigning values to variables using different methods. For example, via a JavaScript snippet.&#x20;
+Note you can switch between the different [Custom Inputs](/features/custom-inputs) for assigning values to variables using different methods. For example, via a JavaScript snippet.
 :::
 
 ![](<../../../assets/image (4) (1).png>)
@@ -32,13 +32,13 @@ Note you can switch between the different [Custom Inputs](/platform/testing/feat
 
 Once you have configured a local variable, it's possible to access it in subsequent tasks.
 
-Depending on which [custom input](/platform/testing/features/custom-inputs) you are using, you should access local variables differently.
+Depending on which [custom input](/features/custom-inputs) you are using, you should access local variables differently.
 
 | Attribute      | How to access: Field selection (JQ) | How to access: JavaScript   |
 | -------------- | ----------------------------------- | --------------------------- |
 | Local variable | .variables.productId                | context.variables.productId |
 
-Chain a producer task from the `VARIABLES` port of the previously configured task.&#x20;
+Chain a producer task from the `VARIABLES` port of the previously configured task.
 
 ![](<../../../assets/image (120).png>)
 
@@ -48,7 +48,7 @@ To utilize the variable as the message value, use the **Template (mustache)** in
 
 ![](<../../../assets/image (117).png>)
 
-Click into the Value field, and use the helper to select from a list of available variables.&#x20;
+Click into the Value field, and use the helper to select from a list of available variables.
 
 ![](<../../../assets/image (116).png>)
 
@@ -65,8 +65,10 @@ For example, if you have a Set Variable task that's chained to the **`ON RECORD`
 
 **Example:** Setting a variable from a JSON message value via a Consumer task
 
-_Note you should use the Field Selection (JQ) _ [_custom input_](/platform/testing/features/custom-inputs) _to access the data_
+:::note
+Note you should use the Field Selection (JQ) [custom input](/features/custom-inputs) to access the data
+:::
 
 ![](<../../../assets/image (47).png>)
 
-If you have more than one origin for a task, you can use Field Selection (JQ) or Javascript advanced filtering options to pick the right one.&#x20;
+If you have more than one origin for a task, you can use Field Selection (JQ) or Javascript advanced filtering options to pick the right one.

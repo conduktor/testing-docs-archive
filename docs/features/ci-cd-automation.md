@@ -16,7 +16,7 @@ Conduktor Testing supports automated execution of Test Scenarios via the CI Agen
 
 ## Configuring the CI Agent
 
-The pre-requisite for executing tests in your CI environment is configuring the CI Agent.&#x20;
+The pre-requisite for executing tests in your CI environment is configuring the CI Agent.
 
 > A single agent token can be used in multiple CI process in parallel. However for audit purposes, we recommend creating new agents when the scope or access changes.
 
@@ -28,7 +28,7 @@ Select **CI Agent** and click **Create.**
 
 ### **Download the Token**
 
-**Download** the newly generated token and store it somewhere secure.&#x20;
+**Download** the newly generated token and store it somewhere secure.
 
 :::danger
 Careful, as **you will only be shown the token once!** So make sure you download it and store it somewhere secure
@@ -40,9 +40,9 @@ Careful, as **you will only be shown the token once!** So make sure you download
 
 Select the **Github Action** tab to see an example command for executing test scenarios in your CI/CD environment.
 
-Note you can use this template, but you will need to replace the **'CONFIG'** dependency.&#x20;
+Note you can use this template, but you will need to replace the **'CONFIG'** dependency.
 
-To obtain the config, see [obtaining the CI configuration](ci-cd-automation#obtaining-the-ci-configuration).&#x20;
+To obtain the config, see [obtaining the CI configuration](ci-cd-automation#obtaining-the-ci-configuration).
 
 ![](<../assets/image (27) (1) (1).png>)
 
@@ -64,7 +64,7 @@ On the next screen, you will be displayed the **CI configuration.** This will be
 
 ![](<../assets/image (8) (1) (1).png>)
 
-## Using the CI Configuration&#x20;
+## Using the CI Configuration
 
 ### Running on Github Actions
 
@@ -76,7 +76,7 @@ Note the parameters:
 - **Token**: _Replace with your CI token_
 - **CI Configuration:** The CI configuration obtained in the prior step
 
-> If you copied the Base64 version of the configuration, you should use the _CONFIG_BASE64_ environment variable instead.&#x20;
+> If you copied the Base64 version of the configuration, you should use the _CONFIG_BASE64_ environment variable instead.
 
 ```yaml
 name: Example github action
@@ -127,7 +127,7 @@ Note the parameters:
 - **Token**: _Replace with your CI token_
 - **CI Configuration:** The CI configuration obtained [in the prior step](ci-cd-automation#obtaining-the-ci-configuration)
 
-> If you copied the Base64 version of the configuration, you should use the _CONFIG_BASE64_ environment variable instead.&#x20;
+> If you copied the Base64 version of the configuration, you should use the _CONFIG_BASE64_ environment variable instead.
 
 ```yaml
 version: 2.1
@@ -179,7 +179,7 @@ Note the parameters:
 - **Token**: _Replace with your CI token_
 - **CI Configuration:** The CI configuration obtained [in the prior step](ci-cd-automation#obtaining-the-ci-configuration)
 
-> If you copied the Base64 version of the configuration, you should use the _CONFIG_BASE64_ environment variable instead.&#x20;
+> If you copied the Base64 version of the configuration, you should use the _CONFIG_BASE64_ environment variable instead.
 
 ```yaml
 stages:
@@ -219,7 +219,7 @@ script: /opt/docker/bin/runner-ci-build
 
 Below is an example of a Jenkins pipeline, using the CI agent to automate test execution.
 
-_Prerequisite: Your Jenkins agent should have access to docker daemon._&#x20;
+_Prerequisite: Your Jenkins agent should have access to docker daemon._
 
 Note the parameters:
 

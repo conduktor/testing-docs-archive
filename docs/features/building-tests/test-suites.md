@@ -14,7 +14,7 @@ From your Workspace, navigate to to the **Test Suite** tab in the main navigatio
 
 ![](<../../assets/image (9).png>)
 
-Select **Create New**; you will then be prompted to provide a name.&#x20;
+Select **Create New**; you will then be prompted to provide a name.
 
 ![](<../../assets/image (2) (1) (1).png>)
 
